@@ -148,7 +148,7 @@ export default function Profile(){
             <div class="card profile-card" >
                 <div class="row">
                     <div class="col-3">
-                        <img  src={"http://localhost:8000" + user.pic} class="profile-img"></img>
+                        <img  src={url + user.pic} class="profile-img"></img>
                     </div>
                     <div class="col-9">
                         <div class="card-body">

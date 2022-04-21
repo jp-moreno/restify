@@ -62,19 +62,28 @@ export default function Blogs(props){
 
     }
 
+    const local_url = new RegExp('http://127.0.0.1:8000/(.*)');
+
+    function getCorrectUrl(curr_url){
+        let match = curr_url.match(local_url);
+        console.log(url+match[1])
+        return url + match[1];
+
+    }
+
    function pagination(items){
             if(items.next!==null && items.previous!==null){
             return (<div>
-                    <button class="btn btn-secondary" onClick={()=>setUrl(items.previous)}>Prev</button>
-                    <button class="btn btn-secondary" onClick={()=>setUrl(items.next)}>Next</button>
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(items.previous))}>Prev</button>
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(items.next))}>Next</button>
                 </div>)
             } else if(items.next!==null){
                 return (<div>
-                    <button class="btn btn-secondary" onClick={()=>setUrl(items.next)}>Next</button>
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(items.next))}>Next</button>
                 </div>)
             } else if(items.previous!==null){
                 return (<div>
-                    <button class="btn btn-secondary" onClick={()=>setUrl(items.previous)}>Prev</button>
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(items.previous))}>Prev</button>
                 </div>)
              }else{
             return (<div>

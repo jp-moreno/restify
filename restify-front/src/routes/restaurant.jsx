@@ -100,7 +100,7 @@ export default function Restaurant(){
             <h1>Restaurant</h1>
             <div class="row">
                 <div class="col-6">
-                    <img class="primaryrest-img" src={"http://localhost:8000" + rest.primarypic}></img>
+                    <img class="primaryrest-img" src={url + rest.primarypic}></img>
                 </div>
                 <div class="col-6 rest-info">
                     <p><strong>Name: </strong>{rest.name}</p>
@@ -108,7 +108,7 @@ export default function Restaurant(){
                     <p><strong>Location: </strong>{rest.address}, {rest.postalcode}</p>
                     <p><strong>Phone Number: </strong>{rest.phonenumber}</p>
                     <p><strong>Likes, Followers: </strong>{rest.likes}, {rest.followers}</p>
-                    <strong>Logo: </strong><img class="logo-img" src={"http://localhost:8000" + rest.logo}></img>
+                    <strong>Logo: </strong><img class="logo-img" src={url+ rest.logo}></img>
                 </div>
             </div>
             <div class="center">
@@ -145,7 +145,7 @@ export default function Restaurant(){
             <h1>Restaurant</h1>
             <div class="row">
                 <div class="col-6">
-                    <img class="primaryrest-img" src={"http://localhost:8000" + rest.primarypic}></img>
+                    <img class="primaryrest-img" src={url + rest.primarypic}></img>
                 </div>
                 <div class="col-6 rest-info">
                     <p><strong>Name: </strong>{rest.name}</p>
@@ -153,7 +153,7 @@ export default function Restaurant(){
                     <p><strong>Location: </strong>{rest.address}, {rest.postalcode}</p>
                     <p><strong>Phone Number: </strong>{rest.phonenumber}</p>
                     <p><strong>Likes, Followers: </strong>{rest.likes}, {rest.followers}</p>
-                    <strong>Logo: </strong><img class="logo-img" src={"http://localhost:8000" + rest.logo}></img>
+                    <strong>Logo: </strong><img class="logo-img" src={url + rest.logo}></img>
                 </div>
             </div>
             <div class="center">

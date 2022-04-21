@@ -202,13 +202,13 @@ export default function YourRestaurant(){
             <h1>Restaurant</h1>
             <div class="row">
                 <div class="col-6">
-                    <img class="primaryrest-img" src={"http://localhost:8000" + rest.primarypic}></img>
+                    <img class="primaryrest-img" src={url + rest.primarypic}></img>
                 </div>
                 <div class="col-6 rest-info">
                     <p><strong>Name: </strong>{rest.name}</p>
                     <p><strong>Description: </strong>{rest.desc}</p>
                     <p><strong>Location: </strong>{rest.address}, {rest.postalcode}</p>
-                    <strong>Logo: </strong><img class="logo-img" src={"http://localhost:8000" + rest.logo}></img>
+                    <strong>Logo: </strong><img class="logo-img" src={url + rest.logo}></img>
                     <p><strong>Page: </strong> <span onClick={()=>goToRestaurantPage(rest.id)} class="clickable">view</span></p>
                 </div>
             </div>

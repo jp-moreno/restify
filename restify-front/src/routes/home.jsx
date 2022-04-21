@@ -24,7 +24,7 @@ export default function Home() {
     }
 
     function displayRestuarnt(rest){
-      return(<tr onClick={()=>goToRestaurantPage(rest.id)}><td><img class="rest-img" src={"http://localhost:8000" + rest.primarypic}></img></td>
+      return(<tr onClick={()=>goToRestaurantPage(rest.id)}><td><img class="rest-img" src={url + rest.primarypic}></img></td>
       <td class="rest-info">
         <p><strong>Name: </strong>{rest.name}</p>
         <p><strong>Description: </strong> {rest.desc} </p>
