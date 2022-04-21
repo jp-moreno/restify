@@ -1,0 +1,280 @@
+
+/* starting css based off of https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+ /* The sidebar menu */
+.navbar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 15%; /* Set the width of the sidebar */
+    min-width: 200px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.navbar button {
+    padding: 0;
+    width: 100%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.navbar button:hover {
+    color: #f1f1f1; 
+}
+
+/* Style page content */
+.main-container {
+    margin-left: max(15%, 200px); /* https://stackoverflow.com/a/62269428 */
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+}
+
+
+/* css based off of this done https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.login-container{
+    padding-top: 10px;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    margin:auto;
+    margin-top: 20px;
+    width: 30%;
+}
+.login-container label{
+    display: inline-block;
+    width: 150px;
+}
+.login-container input{
+    display: inline-block;
+    width: 200px;
+}
+
+.card-body{
+    padding-left: 5%;
+    padding-top: 12%;
+}
+
+.profile-text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.update-profile-container{
+    padding-top: 10px;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    margin:auto;
+    width:50%;
+}
+.update-profile-container label{
+    display: inline-block;
+    width: 150px;
+}
+.update-profile-container input{
+    display: inline-block;
+    width: 300px;
+}
+
+.blogform-container label{
+    display: inline-block;
+    width: 100px;
+}
+.blogform-container input{
+    display: inline-block;
+    width: 300px;
+}
+
+.update-menu-container label{
+    display: inline-block;
+    width: 100px;
+}
+.update-menu-container input{
+    display: inline-block;
+    width: 300px;
+}
+
+.update-rest-container{
+    padding-top: 10px;
+    padding-bottom: 70px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    margin:auto;
+    width:100%;
+}
+.update-rest-container label{
+    display: inline-block;
+    width: 150px;
+}
+.update-rest-container input{
+    display: inline-block;
+    width: 500px;
+}
+
+
+
+
+.profile-container{
+    text-align: center;
+    margin:auto;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.profile-img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.rest-img{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.my-jumbotron{
+    background-image: url('http://localhost:3000/hero.jpg');
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.my-jumbo{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.search-bar{
+    margin-bottom: 15px;
+}
+
+.restaurant-container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.restaurant-container tr:nth-child(even) {
+    background-color: rgb(206, 206, 206);
+}
+
+.menu-tr:nth-child(even) {
+    background-color: rgb(206, 206, 206);
+}
+
+.blog-table tr:nth-child(even) {
+    background-color: rgb(206, 206, 206);
+}
+
+.rest-info{
+    font-size: 20px;
+}
+
+.footer{
+    bottom: 20px;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.center{
+    justify-content: center;
+    display:flex;
+}
+
+.my-nav{
+    list-style-type: none;
+}
+
+.my-nav-item{
+    color:white;
+    font-size: 30px;
+}
+
+
+.my-nav-item:hover{
+    color:#818181;
+}
+
+.blog-container{
+    padding-top: 20px;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.clickable{
+    color: #0d6efd;
+}
+
+
+.clickable:hover{
+    color:#818181;
+}
+
+.myrest-container{
+    margin: auto;
+    width: 60%;
+}
+.primaryrest-img{
+    height: 100%;
+    width: 100%;
+}
+
+.logo-img{
+    height: 50px;
+}
+
+.menu-container{
+    width: 60%;
+    margin:auto;
+    text-align: center;
+}
+
+.my-btn{
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.comment-container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    list-style: none;
+}
+
+.notification-container{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+.text-center{
+    text-align: center;
+}
