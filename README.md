@@ -23,6 +23,6 @@ components/comments.jsx
 routes/myblogs.jsx    
 routes/menu.jsx    
 routes/notifications.jsx    
-components/ownernotifications.jsx
-components/usernotifications.jsx
-css/styles.css
+components/ownernotifications.jsx    
+components/usernotifications.jsx   
+css/styles.css    
