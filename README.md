@@ -4,7 +4,7 @@ npm start
 
 ## Note 1: Pagination
 
-Many components you have to work on such notifications, comments, Currently the api returns http://localhost:8000/whatever however the frontend must call http://jpmoreno.ca/restify/api/
+Many components you have to work on such notifications, comments, Currently the api returns http://localhost:8000/whatever however the frontend must call http://jpmoreno.ca/restify/api/ . Use the getCorrectUrl function to get the correct url
 
 
 ## Note 2: Likes/follows bug
