@@ -2,12 +2,12 @@
 npm install  
 npm start  
 
-## Note on pagination
+## Note 1: Pagination
 
-Many components you have to work on such notifications, comments, 
+Many components you have to work on such notifications, comments, Currently the api returns http://localhost:8000/whatever however the frontend must call http://jpmoreno.ca/restify/api/
 
 
-## Note a bug in likes
+## Note 2: Likes/follows bug
 
 Currently sometimes when a restaurant is liked or followed there is lag updating the follow/like button and the follow/like count. This is something that you do not have to worry about
 
@@ -25,3 +25,4 @@ routes/menu.jsx
 routes/notifications.jsx    
 components/ownernotifications.jsx
 components/usernotifications.jsx
+css/styles.css
