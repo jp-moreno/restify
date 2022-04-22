@@ -66,7 +66,7 @@ export default function OwnerNotifications(props){
                 </div>)
              }else{
             return (<div>
-                {items.results.map(item => <li>{item.etype}</li>)}
+                {items.results.map(item => displayItem(item))}
                 </div>)
             }
         }else{

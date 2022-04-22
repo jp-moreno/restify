@@ -14,6 +14,15 @@ export default function Home() {
   var nav = useNavigate();
   let [getUrl, setUrl] = useState(new URL(url+"restaurants/"));
 
+  const local_url = new RegExp('http://127.0.0.1:8000/(.*)');
+
+  function getCorrectUrl(curr_url){
+      let match = curr_url.match(local_url);
+      return url + match[1];
+  }
+
+
+
   useEffect(()=> {
       fetch(getUrl).then((resp) => resp.json())
       .then(body => {setRests(body); setLoading(false)});
@@ -52,8 +61,8 @@ export default function Home() {
                 {rests && rests.results.map(rest=>displayRestuarnt(rest))}
                 </table>
                   <div class="center">
-                    <button class="btn btn-secondary" onClick={()=>setUrl(rests.previous)}>Prev</button>
-                    <button class="btn btn-secondary" onClick={()=>setUrl(rests.next)}>Next</button>
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(rests.previous))}>Prev</button>
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(rests.next))}>Next</button>
                   </div>
                 </div>)
             } else if(rests.next!==null){
@@ -61,14 +70,18 @@ export default function Home() {
                 <table>
                 {rests && rests.results.map(rest=>displayRestuarnt(rest))}
                 </table>
-                    <div class="center"><button class="btn btn-secondary" onClick={()=>setUrl(rests.next)}>Next</button></div>
+                  <div class="center">
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(rests.next))}>Next</button>
+                  </div>
                 </div>)
             } else if(rests.previous!==null){
                 return (<div>
                 <table>
                 {rests && rests.results.map(rest=>displayRestuarnt(rest))}
                 </table>
-                    <div class="center"><button class="btn btn-secondary" onClick={()=>setUrl(rests.previous)}>Prev</button></div>
+                  <div class="center">
+                    <button class="btn btn-secondary" onClick={()=>setUrl(getCorrectUrl(rests.previous))}>Prev</button>
+                  </div>
                 </div>)
              }else{
             return (<div>

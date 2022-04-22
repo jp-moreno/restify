@@ -27,8 +27,17 @@ export default function Comments(props){
     }, [updateItems, reload, get_url]);
 
     function setUrl(newurl){
-        updateUrl(new URL(newurl));
+        updateUrl(new URL(getCorrectUrl(newurl)));
     }
+
+    const local_url = new RegExp('http://127.0.0.1:8000/(.*)');
+
+    function getCorrectUrl(curr_url){
+        let match = curr_url.match(local_url);
+        return url + match[1];
+    }
+
+
     
 
     function dispalyItems(){

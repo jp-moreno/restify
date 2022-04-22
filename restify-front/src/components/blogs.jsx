@@ -66,9 +66,7 @@ export default function Blogs(props){
 
     function getCorrectUrl(curr_url){
         let match = curr_url.match(local_url);
-        console.log(url+match[1])
         return url + match[1];
-
     }
 
    function pagination(items){
